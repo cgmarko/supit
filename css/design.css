@@ -1,0 +1,1096 @@
+* {
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  #menu {
+    display: none;
+  }
+
+  #about .dropdown {
+    right: 66.67%;
+  }
+  #user .dropdown {
+    right: 0%;
+  }
+  
+  .dropdown {
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    width: 16.67%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    top: 63.4px;
+  
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .nav-bar > li:hover {
+    background-size: 0 0.1em, 75% 0.1em;
+  }
+  .dropdown > li {
+    background-image: none;
+  }
+  .dropdown > li > a {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      linear-gradient(to right, rgb(255, 174, 0), rgb(0, 191, 255));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  .dropdown > li > a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+  .overlay > span {
+    top: 60%;
+  }
+  div.col-4:has(h4) {
+   
+    margin: 2%;
+  }
+  
+  .row.top .overlay > p {
+    font-size: 30px;
+  }
+  .row.top .overlay {
+    top: 60%;
+    left: 15%;
+    width: 70%;
+   
+  }
+  .modal-footer {
+    text-align: right;
+    margin-right: 10px;
+  }
+.row.top img {
+  height: 500px;
+}
+
+.column-form table .has-element {
+  display: table;
+}
+.column-form table th, td{
+  padding: 10px;
+  text-align: center;
+}
+.column-form :has(#dodaj) {
+  margin-bottom: 12px;
+}
+
+.column-form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+  .hide {
+    display: block;
+    animation: undisplay-dropdown 0.3s ease-in-out both;
+  }
+
+
+  @keyframes blink-animation {
+    0% {
+      max-height: 0%;
+    }
+    100% {
+      max-height: 100%;
+    }
+  }
+
+  .show {
+    display: block;
+    animation: display-dropdown 0.3s ease-in-out both;
+  }
+  .dropdown:hover {
+    display: block;
+  }
+
+  .dropdown > * {
+    border-top: #888 1px solid;
+    width: 100%;
+    line-height: normal;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .dropdown > * > * {
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+
+  div.row:has(div.col-8 > iframe) {
+    margin-left: 16.67%;
+    margin-right: 16.67%;
+  }
+  div.col-8:has(iframe) {
+    width: 100%;
+  }
+  div.row:has(div.col-4 > h4) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  div.col-12:has(p) {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  div.row:has(div.col-3) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
+  .col-3 {
+    flex: 1;
+    margin: 2%;
+  }
+
+  div.col-3 > div:has(h6) {
+    max-height: 80px;
+  }
+}
+
+#menu ul {
+  display: flex;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  list-style-type: none;
+  width: 100%;
+  z-index: 980;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .nav-bar >
+  #about,.nav-bar >
+  #news,.nav-bar >
+  #contact,.nav-bar >
+  #schedule {
+    display: none;
+  }
+  #menu .dropdown {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 63.4px;
+    right: 0%;
+    background-color: rgba(255, 255, 255, 0.9);
+  
+  }
+  #menu .dropdown >* {
+    text-align: center;
+    padding-left: 5%;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 63.4px;
+    border-top: #888 solid 1px;
+  }
+
+  #menu .dropdown >* >a, 
+  #menu .dropdown >* >a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-bar > * > * > span {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-bar > * {
+    text-align: center;
+    max-width: 10%;
+  }
+  div.col-12:has(p) {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+ 
+  #user .dropdown, #about .dropdown {
+    position: absolute;
+    top: 200%;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+  }
+
+  div.col-4:has(h4) {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    border: solid 2px;
+  }
+
+  div.row.lokacija {
+    margin-top: 15px;
+  }
+
+  div.row.adobe {margin-bottom: 10px;}
+
+  .row.top .overlay > p {
+    font-size: 20px;
+  }
+  .row.top .overlay {
+    top: 30%;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .column-form table.no-element{
+    display: none;
+  }
+  .column-form table.has-element{
+    overflow: scroll;
+    display: block;
+  }
+  .column-form:has(#dodaj) input {
+    width: 100%;
+    min-width: 100%
+  }
+  
+  .column-form:has(#dodaj) {
+    text-align: right;
+  }
+  .column-form:has(#dodaj) button {
+    margin: 10px;
+  }
+  .column-form td, th {
+    padding: 10px;
+  }
+  .overlay > span {
+    top: 33%;
+  }
+  div.col-4.scrolled:has(h4) {
+    animation: border-animation 3s ease-in-out both,
+      fade-in-bottom 2s ease-in-out both;
+  }
+
+  div.row:has(div.col-3 > h6) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.col-3.scrolled:has(h6) {
+    animation: border-animation 3s ease-in-out both,
+      fade-in-bottom 2s ease-in-out both;
+  }
+  div.col-3:has(h6) {
+    border: solid 2px;
+    flex: 1;
+    margin: 2%;
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    height: 150px;
+  }
+  div.row:has(div.col-8 > iframe) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+.column-form {
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  width: 90%;
+}
+  .modal-footer {
+    text-align: center;
+    margin:auto
+  }
+  .modal-header h2 {
+text-align: left;
+font-size: 25px;
+
+  }
+}
+
+[class*="col-"] {
+  padding: 15px;
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav-bar {
+  padding: 0;
+
+  list-style-type: none;
+  width: 100%;
+  position: fixed;
+  z-index: 980;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar > * {
+  padding: 7px;
+  padding-top: 10px;
+  margin: 0;
+  margin: 10px;
+  border-radius: 5px;
+  width: 15%;
+  text-align: center;
+}
+
+
+
+.nav-bar > * > * {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.fa {
+  color: black;
+}
+
+.nav-bar > li {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(
+      to right,
+      rgb(0, 234, 255, 1),
+      rgba(255, 0, 180, 1),
+      rgb(255, 251, 0)
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 50% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -63.4px;
+  visibility: hidden;
+}
+div.row:has(div.col-12 > img) {
+  padding-top: 63.4px;
+}
+div.row > div:has(img) {
+  padding-top: 0;
+}
+div.row.top {
+  padding-top: 63.4px;
+}
+
+.col-4 img {max-width: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: white;}
+
+div.row.top img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: white;
+  min-height: 300px;
+}
+
+div.row.novosti img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: white;
+  min-height: 300px;
+
+  padding: 15px;
+}
+
+#kampus {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: white;
+  min-height: 300px;
+
+  padding: 5px;
+}
+
+.row.top .overlay {
+  position: absolute;
+  z-index: 900;
+  margin: auto;
+
+}
+.row.top .overlay > p {
+ 
+  text-align: center;
+  font-weight: 500;
+  color: white;
+
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.row.novosti .overlay {
+  position: absolute;
+  width: 70%;
+  top: 40%;
+  z-index: 900;
+  left: 15%;
+  margin: auto;
+}
+.row.novosti .overlay > hr {
+  color: white;
+}
+.row.novosti .overlay > p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.overlay > span {
+  position: absolute;
+  width: 80%;
+
+  left: 10%;
+  z-index: 900;
+}
+.overlay > span > p {
+  text-align: center;
+  font-size: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 234, 255, 1),
+    rgba(255, 0, 180, 1),
+    rgb(255, 251, 0)
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  font-weight: 400;
+  /* animation: glow-animation 1s ease-in-out both infinite; */
+  text-shadow: 0 0 50px white;
+  color: transparent;
+  display: inline;
+}
+
+#serious > div > span > p:nth-child(2) {
+  color: white;
+  background: none;
+}
+
+#serious > div > span.not-typing > p:nth-child(2) {
+  animation: blink-animation 1s ease-in-out both infinite;
+
+}
+
+@keyframes blink-animation {
+  0% {
+    color: transparent;
+  }
+  24.9%{
+    color: transparent;
+   }
+   25% {color: white;}
+  74.9% {
+    color: white;
+  }
+  75%{
+    color: transparent;
+   }
+  100% {
+    color: transparent;
+  }
+}
+
+.galerija > div {
+  overflow: hidden;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  width: 96%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.galerija > div > a > img {
+  opacity: 0.6;
+  height: 200px;
+  transition: transform .2s, opacity .2s
+}
+
+.galerija > div > a > img:hover {
+  opacity: 1;
+  transform: scale(1.2)
+}
+
+.col-4:has(video){ padding: 0;
+  margin: 0;
+background-color: black;}
+.col-4 > video {
+  padding: 0;
+  margin: 0;
+}
+
+#serious > video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.col-4 > p {
+  padding: 10px;
+}
+
+.col-4 > hr {
+  margin-top: 5px;
+}
+
+div.row:has(div.col-3) {
+  text-align: center;
+}
+.col-3 > img {
+  max-height: 100%;
+  max-width: 50%;
+  margin: 10px;
+}
+.js-scroll {
+  width: 50%;
+  height: 300px;
+  background-color: #dadada;
+  transition: background-color 500ms;
+}
+
+div.col-4:has(h4) {
+  border: solid 2px rgb(0, 255, 255);
+
+  flex: 1;
+}
+div.col-4:has(h4).scrolled {
+  animation: border-animation 3s ease-in-out both,
+    fade-in-bottom 2s ease-in-out both;
+}
+
+.col-4 p a:visited,
+.col-4 p a {
+  color: orangered;
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: rgb(0, 255, 255);
+  }
+
+  100% {
+    border-color: rgb(255, 225, 0);
+  }
+}
+
+@keyframes undisplay-dropdown {
+  0% {
+  }
+  50% {
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes display-dropdown {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hide-in-bottom {
+  0% {
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.hideme {
+  opacity: 0;
+}
+
+.scrolled {
+  animation: fade-in-bottom 2s ease-in-out both;
+}
+
+.subtitle.scrolled{
+  animation: slide-in-right 2s ease-in-out both;
+}
+
+.row:has(div.subtitle){
+  overflow:hidden
+}
+
+.row ul {
+  padding-inline-start: 5%;
+}
+
+#schedule {
+  visibility: hidden;
+}
+footer {
+  height: 300px;
+  background-image: url("/img/zaiskri-bg.jpg");
+  background-size: cover;
+}
+footer > div {
+  height: 100%;
+  padding-top: 50px;
+}
+footer > div > div {
+  height: 100px;
+  line-height: 100px;
+}
+footer > div > div > span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  line-height: normal;
+}
+footer > div > div:first-of-type > span > h2 {
+  color: aqua;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+footer > div > div > span > h2 {
+  color: yellow;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+
+  color: black;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal input {background-color: 
+  rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-color: transparent;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal textarea {background-color: 
+  rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-color: transparent;
+
+  height: 80px !important;
+  width: 100% !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#ReceiveNewsletter {
+  width: auto;
+  height: auto;
+  border: #000 solid 15px;
+}
+
+.modal select {background-color: 
+  rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-color: transparent;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+  .modal option {background-color: 
+    transparent}
+/* Modal Content */
+.modal-content {
+  border-radius: 5px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 500px;
+  max-height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+span.close {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body {padding: 2px 16px;}
+ button {
+  border-color: transparent;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.modal-footer button[type="submit"]{
+  background-color: greenyellow;
+ 
+}
+
+.modal-header h2 {
+  padding: 10px;
+}
+
+
+.modal-footer button.close{
+  background-color: orangered;
+
+}
+
+ button:hover{
+  filter: brightness(80%);
+}
+
+.column-form input {background-color: 
+    rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border-color: transparent;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .column-form {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 234, 255, 1),
+     
+      rgb(255, 251, 0)
+    );
+    border-radius: 5px;
+
+  }
+
+  .column-form a{
+    color: rgb(0, 94, 255) ;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(
+      to right,
+      skyblue,
+      skyblue
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  }
+  .column-form  a:focus{
+    text-decoration: none;
+  }
+  .column-form  a:hover {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+
+  #user {display: none;}
+  .column-form button {
+    margin: 0;
+
+  }
+
+ .col-4.column-form:has(#dodaj){
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+ .column-form:has(#dodaj) input {background-color: 
+  rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-color: transparent;
+  width: 86%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+.column-form:has(#dodaj) #dodaj {
+  width: 10%;
+  min-width: 60px;
+}
+.column-form table {
+background-color: white;
+border-radius: 5px;
+border-collapse: collapse;
+width: 100%;
+}
+.column-form tr{
+  width: 100%;
+  min-width: 100%;
+}
+.column-form td{
+  text-align: center;
+  border: 1px dotted gainsboro;
+}
+.column-form th {
+  border: 1px dotted gainsboro;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+button:has(i[class="fa-solid fa-x"]) {
+  height: 25px;
+  width: 25px;
+
+  background-color: orangered;
+}
+.no-element{
+  display: none;
+}
+.column-form table{
+  font-weight: 300;
+}
+.column-form tfoot > * {
+ font-weight: bold;}
+ .column-form tfoot > *:first-child > *:first-child {
+  text-align: right;}
+  #menu > * {
+    max-height: 0%;
+    overflow: hidden;
+  }
+  #menu > *.show  {
+    animation: display-dropdown-2 0.5s ease-in-out both;
+  overflow: hidden;
+  }
+  #menu > *.hide  {
+    animation: undisplay-dropdown-2 0.5s ease-in-out both;
+  overflow: hidden;
+  }
+  
+@keyframes display-dropdown-2 {
+  0% {
+    max-height: 0%
+  }
+  100% {
+    max-height: 500%;
+  }
+}
+@keyframes undisplay-dropdown-2 {
+  0% {
+    max-height: 500%
+  }
+  100% {
+    max-height: 0%;
+  }
+}
+

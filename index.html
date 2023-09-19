@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPIT</title>
+  <link rel="stylesheet" href="/css/design.css">
+  <link rel="icon" type="image/png" href="/img/Algebra-logo.png" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/scripts/scroll.js"></script>
+  <script src="/scripts/anchor-jump.js"></script>
+  <script src="/scripts/dropdown.js"></script>
+  <script src="/scripts/typewriter.js"></script>
+  <script src="/scripts/contact.js"></script>
+  <script src="/scripts/user.js"></script>
+
+</head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li id="menu"><a href="#!"><i class="fa fa-bars"></i></a>
+          <ul class="dropdown">
+                      <li id="about"><a href="/about/" ><i class="fa fa-comments"></i><span> O NAMA</span></a></li>
+                      <li id="news"><a href="/novosti/" ><i class="fa fa-info-circle"></i><span> NOVOSTI</span></a></li>
+                      <li id="contact"><a href="#!" ><i class="fa fa-envelope"></i><span> KONTAKT</span></a></li>
+                      <li><a class="schedule" href="/nastavni-plan/"><i class="fa fa-calendar"></i><span> NASTAVNI PLAN</span></a></li>
+                      <li><a class="logout" href="#!"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                       <span> ODJAVI SE</span></a></li>
+                    </ul>
+        </li>
+        <li id="home"><a href="/"><i class="fa fa-home"></i><span> POČETNA</span></a></li>
+        <li id="about"><a href="/about/"><i class="fa fa-comments"></i><span> O NAMA</span></a>
+          <ul class="dropdown">
+            <li><a href="/about/#nase-vrijednosti">NAŠE VRIJEDNOSTI</a></li>
+            <li><a href="/about/#povijest">POVIJEST</a></li>
+            <li><a href="/about/#algebra-grupa">ALGEBRA GRUPA</a></li>
+            <li><a href="/about/#kako-do-nas">KAKO DO NAS?</a></li>
+
+          </ul>
+        </li>
+        <li id="news"><a href="/novosti/"><i class="fa fa-info-circle"></i><span> NOVOSTI</span></a></li>
+        <li id="contact"><a href="#!"><i class="fa fa-envelope"></i><span> KONTAKT</span></a></li>
+        <li id="schedule"><a href="/nastavni-plan/"><i class="fa fa-calendar"></i><span> NASTAVNI PLAN</span></a></li>
+        <li id="login"><a href="/login/"><span>PRIJAVI SE </span><i class="fa fa-right-to-bracket"></i></a></li>
+        <li id="user"><a href="#!"><span></span><i class="fa fa-user"></i></a>
+          <ul class="dropdown">
+            <li><a class="logout" href="#!">ODJAVI SE</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="serious">
+    <video width="100%" autoplay muted loop>
+      <source src="/video/5 video intro bebas nocopyright untuk konten (2).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"><span>
+        <p></p>
+        <p>|</p>
+      </span>
+
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>KONTAKTIRAJTE NAS</h2>
+      </div>
+      <div class="modal-body">
+        <form id="contact-form" action="https://www.fulek.com/mvc/supit/project-contact-form">
+          <label for="FullName">Puno ime:</label><br>
+          <input type="text" id="FullName" name="FullName" value=""><br>
+          <label for="Email">E-mail:</label><br>
+          <input type="text" id="Email" name="Email" value=""><br>
+          <label for="Importance">Važnost poruke:</label><br>
+          <select id="Importance" name="Importance">
+            <option value="Niska">Niska</option>
+            <option value="Srednja">Srednja</option>
+            <option value="Visoka">Visoka</option>
+
+          </select> <br>
+          <label for="Message">Poruka:</label>
+          <br>
+          <textarea id="Message" name="Message"></textarea><br>
+          <label for="ReceiveNewsletter">Želim primati obavijesti:</label>
+
+          <input type="checkbox" id="ReceiveNewsletter" name="ReceiveNewsletter" value="True">
+          <br><br>
+        </form>
+      </div>
+      <div class="modal-footer"> <button class="close">ODUSTANI</button>
+        <button type="submit" form="contact-form" value="Submit">POŠALJI</button>
+
+      </div>
+      
+
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
